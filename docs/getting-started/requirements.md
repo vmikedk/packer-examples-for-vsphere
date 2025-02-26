@@ -148,7 +148,7 @@ The following additional software packages must be installed on the operating sy
     sudo apt update
     sudo apt install software-properties-common
     sudo add-apt-repository --yes --update ppa:ansible/ansible
-    sudo apt install -y python3 python3-pip ansible git jq xorriso whois unzip
+    sudo apt install -y python3 python3-pip ansible git jq xorriso whois unzip terraform
     echo "ansible-core $(ansible --version | grep 'ansible.*core' | awk '{print $3}' | tr -d ']')"
     echo "terraform $(terraform version | awk -Fv '{print $2}' | head -n 1)"
     export PATH="$HOME/.local/bin:$PATH"
